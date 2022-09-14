@@ -1,0 +1,58 @@
+{% extends 'base.html' %} {% load static %} {% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/index.css' %}" />
+{%endblock%} {% block title %} Alyeska {% endblock %} {% block content %}
+<header class="main-navigation">
+  <h1><a href="">Alyeska</a></h1>
+  <nav>
+    <a href="">All Posts</a>
+  </nav>
+</header>
+
+<section class="welcome">
+  <header>
+    <img
+      src="{% static 'blog/images/avataaars.png' %}"
+      alt="Mhret - Developer of Alyeska"
+    />
+    <h2>Alyeska's Venting space</h2>
+  </header>
+  <p>
+    “Once you realize how beautiful you are, you will find it hard to keep the
+    company of those who do not.”
+  </p>
+</section>
+
+<section class="latest-posts">
+  <h2>Latest from Alyeska</h2>
+  <ul>
+    <li>
+      <article class="post">
+        <a href="">
+          <div class="post__image">
+            <img
+              src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-691668.jpg&fm=jpg"
+              alt="Mountain Hiking"
+            />
+          </div>
+          <div class="post__content">
+            <h3>Mountain Hiking</h3>
+            <p>
+              There is nothing like the views you get when hiking a mountain!
+            </p>
+          </div>
+        </a>
+      </article>
+    </li>
+  </ul>
+</section>
+
+<section class="about">
+  <h2>What I Do</h2>
+  <p>
+    I love coding. I love designing UI and developing them with modern
+    technologies in a very structured manner.
+  </p>
+
+  <a href="">Lets grow together?</a>
+</section>
+{% endblock %}

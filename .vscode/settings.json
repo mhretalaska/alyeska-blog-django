@@ -1,0 +1,10 @@
+{
+  "python.formatting.provider": "yapf",
+  "python.languageServer": "Pylance",
+  "files.associations": {
+    "*.html": "html",
+    "**/templates/**/*.html": "django-html",
+    "**/templates/**/*": "django-text",
+    "**/requirements{/**,*}.{text,in}": "pip-requirements"
+  }
+}
